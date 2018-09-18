@@ -3,11 +3,12 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+    client.user.setActivity(`Watching shane.exe`);
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'sal') {
+    	message.reply('Salutare!');
   	}
 });
 
