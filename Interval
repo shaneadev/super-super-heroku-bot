@@ -1,0 +1,4 @@
+var http = require("http");
+setInterval(function() {
+    http.get("http://dashboard.heroku.com/apps/sa-universe-bot");
+}, 60000);
